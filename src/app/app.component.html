@@ -6,4 +6,8 @@
      do not need the brackets because they are just sting values. -->
 <app-instruction [stepNumber]="0"
   description="Our app has an example of one child element getting values from the parent.  You will notice that all the content displayed in the instruction component is provided by the values in the tag for the component. "
-  nextCheckout="input-tag" fileUpdated="app.component.ts"></app-instruction>
+  nextCheckout="input-tag" fileUpdated="app.component.html"></app-instruction>
+
+<app-instruction [stepNumber]="1"
+  description="We created a new component called demo.  In the ts file, we added Input to the imports.  This allows us to use custom inputs. Open up the ts file and look at where we added the Input."
+  nextCheckout="at-input" fileUpdated="demo.component.ts"></app-instruction>
