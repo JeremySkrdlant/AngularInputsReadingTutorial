@@ -19,3 +19,12 @@
 <app-instruction [stepNumber]="3"
   description="We embedded 3 variables in the p tag in our demos html file.  The values of these variables will show up on the page.  Take a look at demos html to see how it was done."
   nextCheckout="add-tag-to-parent" fileUpdated="demo.component.html"></app-instruction>
+
+<app-instruction [stepNumber]="4"
+  description="We added our tag to the parent element.  Notice how we did not set any values.  All the default values are shown."
+  nextCheckout="customize" fileUpdated="app.component.html"></app-instruction>
+
+
+<!--Step 4, This is what we get if we do not pass in any attributes. The tag uses the default values from our ts file.  -->
+<h2>Live Area</h2>
+<app-demo></app-demo>
