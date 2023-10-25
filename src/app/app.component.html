@@ -24,7 +24,14 @@
   description="We added our tag to the parent element.  Notice how we did not set any values.  All the default values are shown."
   nextCheckout="customize" fileUpdated="app.component.html"></app-instruction>
 
+<app-instruction [stepNumber]="5"
+  description="We can call any attributes from our component.  If we do not call it, we get the default."
+  nextCheckout="main" fileUpdated="app.component.html"></app-instruction>
+
 
 <!--Step 4, This is what we get if we do not pass in any attributes. The tag uses the default values from our ts file.  -->
 <h2>Live Area</h2>
-<app-demo></app-demo>
+<!-- Step 5, we added values.  Play around with the values and save the page. 
+     This is the end of the tutorial. 
+-->
+<app-demo [rating]="867" phone="867-5309" name="Jenny"></app-demo>
