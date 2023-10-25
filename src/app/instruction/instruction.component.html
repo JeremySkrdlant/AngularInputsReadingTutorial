@@ -1,0 +1,9 @@
+<div class="wrapper">
+    <h2>{{stepNumber}}</h2>
+    <div class="instruction">
+        <p [class.style]="endsWith('.css')" [class.html]="endsWith('.html')" [class.ts]="endsWith('t.ts')">
+            {{fileUpdated}}</p>
+        <p>{{description}}</p>
+        <p>git checkout {{nextCheckout}}</p>
+    </div>
+</div>
